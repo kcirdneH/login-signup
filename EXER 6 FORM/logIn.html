@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          font-family: Arial;
+          background-color: #f6f6f6;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .dot1 {
+          height: 20px;
+          width: 20px;
+          background-color: #cf3333;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .dot2 {
+          height: 20px;
+          width: 20px;
+          background-color: #dbc625;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .dot3 {
+          height: 20px;
+          width: 20px;
+          background-color: #2fd759;
+          border-radius: 50%;
+          display: inline-block;
+        }
+        .container {
+          border: 3px solid #dbcdcd;
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+        }
+        
+        .top {
+          padding: 10px;
+          background: rgb(246, 234, 219);
+          border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+        }
+        
+        .content {
+          padding: 10px;
+        box-sizing: border-box;
+        }
+        input[type=submit] {
+        background-color: #ffffff;
+        border-top-left-radius: 7px;
+          border-top-right-radius: 7px;
+          border-bottom-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+        color: rgb(0, 0, 0);
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 0px 2px;
+        cursor: pointer;
+        font-family: 'product sans', sans-serif;
+        font-size: 45px;
+        }
+        
+    
+        </style>
+    <title>Log in Page</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="top">
+          <span class="dot1"></span>
+          <span class="dot2"></span>
+          <span class="dot3"></span>
+        </div>
+
+    <center>
+        <h3 style="font-size: 50px;  font-family: 'product sans', sans-serif;">LOG IN</h3>
+<br>
+<hr style="width: 90%; height:2px;border-width:0;color:rgb(176, 137, 137);background-color:gray">
+
+ 
+
+    <form action="postSubmitLog.html">
+
+     
+        <p style="font-size: 30px; font-family: 'product sans', sans-serif;">Username</p>
+        <input type="text" required />
+    
+        <p style="font-size: 30px; font-family: 'product sans', sans-serif;">Email Address</p>
+        <input type="email" required />
+
+        <p style="font-size: 30px; font-family: 'product sans', sans-serif;">Password</p>
+       <input type="password" required value="" id="myInput"><br><br>
+    
+        <input type="checkbox" onclick="myFunction()">Show Password
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+
+      
+   
+        
+  
+        
+        <br/>
+        <br>
+       
+     
+        <br>
+        <hr style="width: 90%; height:2px;border-width:0;color:rgb(176, 137, 137);background-color:gray">
+        <br>
+          <input type="submit" value= "Submit"/>
+        
+        
+       
+    </form>
+    </center>
+</body>
+</html>
